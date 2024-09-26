@@ -47,7 +47,7 @@ Tree folder:
 ├── main.cpp
 └── Makefile
 ```
-## ```read_mavlinkData_by_serial``` folder: Read MavLink by Serial.
+## ```read_mavlinkData_by_serial```: Read MavLink Data via Serial.
 ### Setup Hardware
 
 Connect the USB programming cable to your Pixhawk.
@@ -70,7 +70,7 @@ make
 ```
 
 To stop the program, use the key sequence Ctrl-C.
-## ```send_joystickData``` folder: Read joystick data and send them to Mavlink via UDP
+## ```send_joystickData```: Read joystick data and send them to Mavlink via UDP
 ### Setup Hardware
 
 Connect the USB programming cable to your joystick
