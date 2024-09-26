@@ -4,7 +4,7 @@
 
 Clone project: 
 ```
-https://github.com/tranhien1612/C_MavLink.git
+git clone https://github.com/tranhien1612/C_MavLink.git
 ```
 Unzip ```include``` folder: 
 ```
