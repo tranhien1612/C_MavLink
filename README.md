@@ -1,4 +1,4 @@
-# Read Mavlink Data by Serial
+# C Mavlink
 
 ## CLone project
 
@@ -10,6 +10,7 @@ Unzip ```include``` folder:
 ```
 cd ./C_MavLink/read_mavlinkData_by_serial/
 unzip include.zip
+cp -r include ../send_joystickData
 ```
 Tree folder:
 ```
@@ -46,8 +47,8 @@ Tree folder:
 ├── main.cpp
 └── Makefile
 ```
-
-## Setup Hardware
+## ```read_mavlinkData_by_serial``` folder: Read MavLink by Serial.
+### Setup Hardware
 
 Connect the USB programming cable to your Pixhawk.
 
@@ -55,7 +56,7 @@ If you want to be able to interact with this example in Pixhawk's NuttX shell, y
 
 Also Note: Using a UART (serial) connection should be preferred over using the USB port for flying systems. The reason being that the driver for the USB port is much more complicated, so the UART is a much more trusted port for flight-critical functions. To learn how this works though the USB port will be fine and instructive.
 
-## Execution
+### Execution
 
 You have to pick a port name, try searching for it with:
 ```
@@ -66,6 +67,20 @@ Run the example executable on the host shell:
 ```
 make
 ./main /dev/ttyACM0
+```
+
+To stop the program, use the key sequence Ctrl-C.
+## ```send_joystickData``` folder: Read joystick data and send them to Mavlink via UDP
+### Setup Hardware
+
+Connect the USB programming cable to your joystick
+
+### Execution
+
+Run the example executable on the host shell:
+```
+make
+./main
 ```
 
 To stop the program, use the key sequence Ctrl-C.
